@@ -2,8 +2,9 @@
   "redirects": [
     {
       "source": "/",
-      "destination": "/2025/hoteler-html/index-3.html",
+      "destination": "/2025/hoteler-html/index.html/index-3.html",
       "permanent": true
     }
   ]
 }
+
