@@ -1,1106 +1,1396 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Mirrored from html.kodesolution.com/2025/hoteler-html/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Jun 2025 15:49:58 GMT -->
+  <head>
+    <meta charset="utf-8" />
+    <title>THE AURA HOTEL</title>
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/flatpickr.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
 
-<!-- Mirrored from html.kodesolution.com/2025/hoteler-html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Jun 2025 15:47:53 GMT -->
-<head>
-<meta charset="utf-8">
-<title>Hoteler - Hotel Booking HTML Template | Home Page 01</title>
-<!-- Stylesheets -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/flatpickr.min.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
-<link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
-<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-<link rel="icon" href="images/favicon.png" type="image/x-icon">
-<!-- Responsive -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-</head>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+  </head>
 
-<body>
-<div class="page-wrapper">
+  <body>
+    <div class="page-wrapper">
+      <!-- Preloader -->
+      <div class="preloader"></div>
+      <!-- Main Header -->
+      <header class="main-header header-style-five style-home3">
+        <div class="header-lower">
+          <div class="main-box">
+            <!-- Logo -->
+            <div class="logo-box">
+              <div class="logo">
+                <a href="index-3.html">
+                  <img
+                    src="images/logoaura.png"
+                    alt="The Aura"
+                    style="height: 65px; width: auto; object-fit: contain"
+                  />
+                </a>
+              </div>
+            </div>
 
-  <!-- Preloader -->
-  <div class="preloader"></div>
+            <!-- Nav Menu (Master Source) -->
+            <div class="nav-outer">
+              <nav class="nav main-menu">
+                <ul id="mainNav" class="navigation">
+                  <li class="dropdown"><a href="index-3.html">Home</a></li>
+                  <li class="dropdown">
+                    <a href="#ourHotelsSection">Our Hotels</a>
+                    <ul>
+                      <li>
+                        <a href="index-11-single.html">The Aura BBSR</a>
+                      </li>
+                      <li><a href="index-11-single1.html">The Aura Puri</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#ourAmenitiesSection">Amenities</a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#">Pages</a>
+                    <ul>
+                      <li><a href="page-about.html">About</a></li>
+                      <li><a href="page-faq.html">Faq</a></li>
+                      <li><a href="page-services.html">Services List</a></li>
 
-  <!-- Main Header-->
-  <header class="main-header header-style-five">
-    <div class="header-top">
-      <div class="inner-box">
-        <!-- Top-left -->
-        <div class="top-left">
-          <ul class="social-icon-one">
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            <li><a href="#"><i class="fab fa-x-twitter"></i></a></li>
-          </ul>
-        </div>
-        <!-- top-right -->
-        <div class="top-right">
-          <span><i class="icon fa-solid fa-envelope"></i> <a href="https://html.kodesolution.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="95fbf0f0f1fdf0f9e5d5f6faf8e5f4fbecbbf6faf8">[email&#160;protected]</a></span>
-          <span><i class="icon fa-sharp fa-solid fa-location-dot"></i> 88 Broklyn Golden Street. New York</span>
-        </div>
-      </div>
-    </div>
-    <div class="header-lower">
-      <!-- Main box -->
-      <div class="main-box">
-        <div class="logo-box">
-          <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title="Hoteler"></a></div>
-        </div>
+                      <li><a href="page-team.html">Team</a></li>
+                      <li><a href="page-404.html">404</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#gallerySection">Gallery</a>
+                  </li>
+                  <li><a href="page-contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
 
-        <!--Nav Box-->
-        <div class="nav-outer">
-          <nav class="nav main-menu">
-            <ul class="navigation">
-              <li class="dropdown"><a href="#">Home</a>
-                <div class="megamenu container">
-                  <div class="row menu-lists-wrapper">
-                    <div class="col-lg">
-                      <ul class="menu-lists ps-lg-5 py-4">
-                        <li class="menu-title">Home Layout</li>
-                        <li><a href="index.html">Home page 01</a></li>
-                        <li><a href="index-2.html">Home page 02</a></li>
-                        <li><a href="index-3.html">Home page 03</a></li>
-                        <li><a href="index-4.html">Home page 04</a></li>
-                        <li><a href="index-5.html">Home page 05</a></li>
-                        <li><a href="index-6.html">Home page 06</a></li>
-                        <li class="menu-title">New Home <span class="badge">New</span></li>
-                        <li><a href="index-7.html">Home page 07</a></li>
-                        <li><a href="index-8.html">Home page 08</a></li>
-                        <li><a href="index-9.html">Home page 09</a></li>
-                      </ul>
+            <!-- Right Controls -->
+            <div class="outer-box">
+              <div class="ui-btn-outer">
+                <button class="ui-btn ui-btn search-btn">
+                  <span class="icon lnr lnr-icon-search"></span>
+                </button>
+              </div>
+              <div class="mobile-nav-toggler">
+                <span class="icon lnr-icon-bars"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile Menu -->
+          <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <nav class="menu-box">
+              <div class="upper-box">
+                <div class="nav-logo">
+                  <a href="index-3.html">
+                    <img
+                      src="images/logoaura.png"
+                      alt="The Aura"
+                      style="height: 65px; width: auto; object-fit: contain"
+                    />
+                  </a>
+                </div>
+                <div class="close-btn"><i class="icon fa fa-times"></i></div>
+              </div>
+
+              <!-- Menu will be injected here -->
+              <ul id="mobileNav" class="navigation clearfix"></ul>
+
+              <ul class="contact-list-one">
+                <li>
+                  <div class="contact-info-box">
+                    <i class="icon lnr-icon-phone-handset"></i>
+                    <span class="title">Call Now</span>
+                    <a href="tel:+92880098670">+91 8455007723</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="contact-info-box">
+                    <span class="icon lnr-icon-envelope1"></span>
+                    <span class="title">Send Email</span>
+                    sales@lazystay.com
+                  </div>
+                </li>
+                <li>
+                  <div class="contact-info-box">
+                    <span class="icon lnr-icon-clock"></span>
+                    <span class="title">Opening Hours</span>
+                    Whole Week 24/7
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="social-links">
+                <li>
+                  <a href="#"><i class="fab fa-x-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-pinterest"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Sticky Header -->
+          <div class="sticky-header">
+            <div class="auto-container">
+              <div class="inner-container">
+                <div class="logo">
+                  <a href="index-3.html">
+                    <img
+                      src="images/logoaura.png"
+                      alt="The Aura"
+                      style="height: 65px; width: auto; object-fit: contain"
+                    />
+                  </a>
+                </div>
+                <div class="nav-outer">
+                  <nav class="main-menu">
+                    <div class="navbar-collapse show collapse clearfix">
+                      <!-- Menu will be injected here -->
+                      <ul id="stickyNav" class="navigation clearfix"></ul>
                     </div>
-                    <div class="col-lg">
-                      <ul class="menu-lists ps-lg-5 py-4">
-                        <li><a href="index-10.html">Home page 10</a></li>
-                        <li><a href="index-11.html">Home page 11</a></li>
-                        <li><a href="index-12.html">Home page 12</a></li>
-                        <li class="menu-title">Dark Layout</li>
-                        <li><a href="index-1-dark.html">Dark Home 01</a></li>
-                        <li><a href="index-2-dark.html">Dark Home 02</a></li>
-                        <li><a href="index-3-dark.html">Dark Home 03</a></li>
-                        <li><a href="index-4-dark.html">Dark Home 04</a></li>
-                        <li><a href="index-5-dark.html">Dark Home 05</a></li>
-                        <li><a href="index-6-dark.html">Dark Home 06</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-lg">
-                      <ul class="menu-lists ps-lg-5 py-4">
-                        <li><a href="index-7-dark.html">Dark Home 07</a></li>
-                        <li><a href="index-8-dark.html">Dark Home 08</a></li>
-                        <li><a href="index-9-dark.html">Dark Home 09</a></li>
-                        <li><a href="index-10-dark.html">Dark Home 10</a></li>
-                        <li><a href="index-11-dark.html">Dark Home 11</a></li>
-                        <li><a href="index-12-dark.html">Dark Home 12</a></li>
-                        <li class="menu-title">Single Layout</li>
-                        <li><a href="index-1-single.html">Single Home 01</a></li>
-                        <li><a href="index-2-single.html">Single Home 02</a></li>
-                        <li><a href="index-3-single.html">Single Home 03</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-lg">
-                      <ul class="menu-lists ps-lg-5 py-4">
-                        <li><a href="index-4-single.html">Single Home 04</a></li>
-                        <li><a href="index-5-single.html">Single Home 05</a></li>
-                        <li><a href="index-6-single.html">Single Home 06</a></li>
-                        <li><a href="index-7-single.html">Single Home 07</a></li>
-                        <li><a href="index-8-single.html">Single Home 08</a></li>
-                        <li><a href="index-9-single.html">Single Home 09</a></li>
-                        <li><a href="index-10-single.html">Single Home 10</a></li>
-                        <li><a href="index-11-single.html">Single Home 11</a></li>
-                        <li><a href="index-12-single.html">Single Home 12</a></li>
-                        <li class="menu-title">RTL Layout</li>
-                        <li><a href="index-1-rtl.html">RTL Style One</a></li>
-                      </ul>
-                    </div>
+                  </nav>
+                  <div class="mobile-nav-toggler">
+                    <span class="icon lnr-icon-bars"></span>
                   </div>
                 </div>
-              </li>
-              <li class="dropdown"><a href="#">Rooms & Suites</a>
-                <ul>
-                  <li><a href="page-rooms.html">Rooms</a></li>
-                  <li><a href="page-rooms-suite.html">Rooms and Suits</a></li>
-                  <li><a href="room-details.html">Room Details</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a href="#">Pages</a>
-                <ul>
-                  <li><a href="page-about.html">About</a></li>
-                  <li><a href="page-faq.html">Faq</a></li>
-                  <li><a href="page-pricing.html">Pricing</a></li>
-                  <li class="dropdown"><a href="#">Services</a>
-                    <ul>
-                      <li><a href="page-services.html">Services List</a></li>
-                      <li><a href="page-service-details.html">Services Details</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a href="#">Team</a>
-                    <ul>
-                      <li><a href="page-team.html">Team List</a></li>
-                      <li><a href="page-team-details.html">Team Details</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a href="#">Shop</a>
-                    <ul>
-                      <li><a href="shop-products.html">Products</a></li>
-                      <li><a href="shop-products-sidebar.html">Products with Sidebar</a></li>
-                      <li><a href="shop-product-details.html">Product Details</a></li>
-                      <li><a href="shop-cart.html">Cart</a></li>
-                      <li><a href="shop-checkout.html">Checkout</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="page-testimonial.html">Testimonials</a></li>
-                  <li><a href="page-404.html">404</a></li>
-                  <li><a href="elements.html">Elements</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a href="#">News</a>
-                <ul>
-                  <li><a href="news-grid.html">News Grid</a></li>
-                  <li><a href="news-details.html">News Details</a></li>
-                </ul>
-              </li>
-              <li><a href="page-contact.html">Contact</a></li>
-            </ul>
-          </nav>
-          <!-- Main Menu End-->
-        </div>
+              </div>
+            </div>
+          </div>
 
-        <div class="outer-box">
-          <div class="ui-btn-outer">
-            <button class="ui-btn ui-btn search-btn">
-              <span class="icon lnr lnr-icon-search"></span>
+          <!-- Search Popup -->
+          <div class="search-popup">
+            <span class="search-back-drop"></span>
+            <button class="close-search">
+              <span class="fa fa-times"></span>
             </button>
-            <a href="shop-cart.html" class="ui-btn cart-btn">
-              <i class="lnr-icon-shopping-cart"></i>
-              <span class="items-count">0</span>
-            </a>
-          </div>
-          <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
-          <!-- Mobile Nav toggler -->
-        </div>
-      </div>
-      <!-- Mobile Menu  -->
-      <div class="mobile-menu">
-        <div class="menu-backdrop"></div>
-        <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
-        <nav class="menu-box">
-          <div class="upper-box">
-            <div class="nav-logo"><a href="index.html"><img src="images/logo-2.png" alt=""></a></div>
-            <div class="close-btn"><i class="icon fa fa-times"></i></div>
-          </div>
-          <ul class="navigation clearfix">
-            <!--Keep This Empty / Menu will come through Javascript-->
-          </ul>
-          <ul class="contact-list-one">
-            <li>
-              <!-- Contact Info Box -->
-              <div class="contact-info-box">
-                <i class="icon lnr-icon-phone-handset"></i>
-                <span class="title">Call Now</span>
-                <a href="tel:+92880098670">+92 (8800) - 98670</a>
-              </div>
-            </li>
-            <li>
-              <!-- Contact Info Box -->
-              <div class="contact-info-box">
-                <span class="icon lnr-icon-envelope1"></span>
-                <span class="title">Send Email</span>
-                <a href="https://html.kodesolution.com/cdn-cgi/l/email-protection#5038353c2010333f3d20313e297e333f3d"><span class="__cf_email__" data-cfemail="543c31382414373b3924353a2d7a373b39">[email&#160;protected]</span></a>
-              </div>
-            </li>
-            <li>
-              <!-- Contact Info Box -->
-              <div class="contact-info-box">
-                <span class="icon lnr-icon-clock"></span>
-                <span class="title">Send Email</span>
-                Mon - Sat 8:00 - 6:30, Sunday - CLOSED
-              </div>
-            </li>
-          </ul>
-          <ul class="social-links">
-            <li><a href="#"><i class="fab fa-x-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          </ul>
-        </nav>
-      </div><!-- End Mobile Menu -->
-
-      <!-- Header Search -->
-      <div class="search-popup">
-        <span class="search-back-drop"></span>
-        <button class="close-search"><span class="fa fa-times"></span></button>
-        <div class="search-inner">
-          <form method="post" action="https://html.kodesolution.com/2025/hoteler-html/index.html">
-            <div class="form-group">
-              <input type="search" name="search-field" value="" placeholder="Search..." required="">
-              <button type="submit"><i class="fa fa-search"></i></button>
+            <div class="search-inner">
+              <form method="post" action="#">
+                <div class="form-group">
+                  <input
+                    type="search"
+                    name="search-field"
+                    placeholder="Search..."
+                    required
+                  />
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+              </form>
             </div>
-          </form>
+          </div>
         </div>
-      </div>
-      <!-- End Header Search -->
+      </header>
+      <!-- End Main Header -->
 
-      <!-- Sticky Header  -->
-      <div class="sticky-header">
+      <!-- ✅ Optimized Script for Auto-Injecting Navigation -->
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const mainNav = document.querySelector("#mainNav");
+          const mobileNav = document.querySelector("#mobileNav");
+          const stickyNav = document.querySelector("#stickyNav");
+
+          if (mainNav) {
+            const navHTML = mainNav.innerHTML;
+
+            if (mobileNav) mobileNav.innerHTML = navHTML;
+            if (stickyNav) stickyNav.innerHTML = navHTML;
+          }
+        });
+      </script>
+
+      <!-- ─────────────────────────────────────────────────────────────
+     BANNER  SECTION  (compact / aligned)
+     ───────────────────────────────────────────────────────────── -->
+      <section class="banner-section-eight">
+        <div class="banner-slider banner-slider-home3" id="bannerSlider"></div>
+      </section>
+      <script>
+        const bannerData = [
+          
+          {
+            backgroundImage: "images/banner/banner2-1.jpg",
+            sideImage: "images/Aurabbsr/Day%20Facade/MAX01432%20copy%203_1.jpg",
+            offerText: "BOOK YOUR HOTEL",
+            title: "Luxury redefined in Bbsr <br />Reserve your suite today .",
+            buttonText: "BOOK NOW",
+            buttonLink: "#ourHotelsSection",
+            infoText: "THE AURA",
+            rating: { score: "4.4", label: "Very Good", count: "58 ratings" },
+          },
+          {
+            backgroundImage: "images/banner/banner2-1.jpg",
+            sideImage: "images/Aurapuri/facade/Facade%20%281%29.jpg",
+            offerText: "BOOK YOUR HOTEL",
+            title: "Beachside bliss at The Aura <br />Escape and unwind now",
+            buttonText: "BOOK NOW",
+            buttonLink: "#ourHotelsSection",
+            infoText: "THE AURA",
+            rating: { score: "4.4", label: "Very Good", count: "58 ratings" },
+          },
+        ];
+
+        const bannerSlider = document.getElementById("bannerSlider");
+
+        bannerData.forEach((item) => {
+          const slide = document.createElement("div");
+          slide.className = "banner-slide";
+
+          slide.innerHTML = `
+    <div class="inner-slide">
+      <div class="bg bg-image overflow-hidden"
+           style="background-image:url(${item.backgroundImage});"></div>
+
+      <div class="outer-box">
+        <!-- IMAGE COLUMN -->
+        <div class="images-column">
+          <div class="inner-column">
+            <div class="bg bg-image1"
+                 style="background-image:url(${item.sideImage});"></div>
+          </div>
+        </div>
+
+        <!-- CONTENT COLUMN -->
+        <div class="content-column">
+          <div class="inner-column">
+            <!-- TOP BAR  (offer text + rating) -->
+            <div class="offer-bar"
+                 style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+              <div class="offer-text"
+                   style="letter-spacing:7px;font-size:14px;flex:1 1 auto;">
+                ${item.offerText}
+              </div>
+
+              <!-- rating wrapper (will push far right) -->
+              <div style="display:flex;align-items:center;gap:10px;white-space:nowrap;flex:0 0 auto;">
+                <div style="background:#008a4e;color:#fff;display:flex;align-items:center;gap:4px;
+                            font-weight:600;font-size:14px;line-height:22px;padding:0 10px;border-radius:8px;">
+                  <span>${item.rating.score}</span>
+                  <span style="font-size:13px;">★</span>
+                </div>
+                <div style="display:flex;flex-direction:column;line-height:1;">
+                  <span style="font-size:14px;font-weight:600;color:#e5e5e5;">${item.rating.label}</span>
+                  <span style="font-size:12px;color:#a3c6e7;">${item.rating.count}</span>
+                </div>
+              </div>
+            </div><!-- /.offer-bar -->
+
+            <!-- TITLE -->
+            <h1 class="title" style="margin-top:8px;">${item.title}</h1>
+
+            <!-- CTA BUTTON -->
+            <div style="margin-top:32px;">
+              <a href="${item.buttonLink}"
+                 class="theme-btn btn-style-two"
+                 style="font-size:15px;font-weight:600;
+                        padding:6px 26px;line-height:30px;border-radius:4px;">
+                <span class="btn-title">${item.buttonText}</span>
+              </a>
+            </div>
+          </div><!-- /.inner-column -->
+        </div><!-- /.content-column -->
+
+        <div class="info-text">${item.infoText}</div>
+      </div><!-- /.outer-box -->
+    </div><!-- /.inner-slide -->
+  `;
+
+          bannerSlider.appendChild(slide);
+        });
+      </script>
+
+      <!-- End Banner Section -->
+
+      <!-- ===================================================== -->
+      <!-- Modern Hotels Section – with image carousels          -->
+      <!-- ===================================================== -->
+      <section class="modern-hotels-section" id="ourHotelsSection">
         <div class="auto-container">
-          <div class="inner-container">
-            <!--Logo-->
-            <div class="logo">
-              <a href="index.html"><img src="images/logo-2.png" alt=""></a>
+          <div class="sec-title text-center mb-5">
+            <span class="sub-title">EXPLORE</span>
+            <h2>Our Hotels</h2>
+          </div>
+
+          <!-- ===== Hotel 1 ==================================== -->
+          <div class="row feature-row">
+            <!-- Image Carousel -->
+            <div class="image-column col-lg-6">
+              <div
+                id="hotel1Carousel"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#hotel1Carousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#hotel1Carousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#hotel1Carousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#hotel1Carousel"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#hotel1Carousel"
+                    data-bs-slide-to="4"
+                    aria-label="Slide 5"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#hotel1Carousel"
+                    data-bs-slide-to="5"
+                    aria-label="Slide 6"
+                  ></button>
+                </div>
+
+                <!-- Slides -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="images/Aurabbsr/Night Facade/MAX01794 copy 2_1.jpg"
+                      class="d-block w-100"
+                      alt="Aura BBSR – Night Facade 1"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/Aurabbsr/Day Facade/MAX01432 copy 3_1.jpg"
+                      class="d-block w-100"
+                      alt="Aura BBSR – Night Facade 2"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/Aurabbsr/Parking/MAX01814_1.jpg"
+                      class="d-block w-100"
+                      alt="Aura BBSR – Day Facade"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/Aurabbsr/Corridor_Stairs_Lift/MAX01472_1.jpg"
+                      class="d-block w-100"
+                      alt="Aura BBSR – Corridor & Lift 1"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/Aurabbsr/Corridor_Stairs_Lift/MAX01562_1.jpg"
+                      class="d-block w-100"
+                      alt="Aura BBSR – Corridor & Lift 2"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/Aurabbsr/Reception/MAX01402_1.jpg"
+                      class="d-block w-100"
+                      alt="Aura BBSR – Reception"
+                    />
+                  </div>
+                </div>
+
+                <!-- Controls -->
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#hotel1Carousel"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#hotel1Carousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             </div>
-            <!--Right Col-->
-            <div class="nav-outer">
-              <!-- Main Menu -->
-              <nav class="main-menu">
-                <div class="navbar-collapse show collapse clearfix">
-                  <ul class="navigation clearfix">
-                    <!--Keep This Empty / Menu will come through Javascript-->
+
+            <!-- Content -->
+            <div class="content-column col-lg-6">
+              <div class="content-box">
+                <span class="sub-title">DISCOVER</span>
+                <h2>THE AURA BBSR</h2>
+                <div class="text">
+                  <i class="fas fa-quote-left"></i>
+                  Discover a haven of comfort and class at The AURA BBSR — the
+                  finest luxury hotel in Bhubaneswar. From serene stays to
+                  impeccable service, every moment here is crafted to indulge
+                  your senses and elevate your journey.
+                </div>
+
+                <div class="key-features">
+                  <ul>
+                    <li><i class="fas fa-wifi"></i> WiFi</li>
+                    <li><i class="fas fa-snowflake"></i> AC Room</li>
+                    <li><i class="fas fa-bed"></i> Comfortable Bed</li>
+
+                    <li><i class="fas fa-concierge-bell"></i> Room Service</li>
+                    <li><i class="fas fa-headset"></i> 24x7 Support</li>
+                    <li><i class="fas fa-city"></i> Rooftop Restaurant</li>
                   </ul>
                 </div>
-              </nav><!-- Main Menu End-->
-              <!--Mobile Navigation Toggler-->
-              <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
-            </div>
-          </div>
-        </div>
-      </div><!-- End Sticky Menu -->
-    </div>
-  </header>
-  <!--End Main Header -->
-
-  <!-- Banner Section -->
-  <section class="banner-section-seven">
-    <div class="banner-slider banner-slider-home1">
-
-      <div class="banner-slide">
-        <div class="outer-box">
-          <figure class="image-1 wow fadeInUp tm-gsap-img-parallax overflow-hidden"><img src="images/banner/banner1-1.jpg" alt=""></figure>
-          <div class="content-box">
-            <div class="star-rating" data-animation-in="fadeInUp" data-wow-delay="300ms">
-              <i class="fa-sharp fa-solid fa-star-sharp"></i>
-              <i class="fa-sharp fa-solid fa-star-sharp"></i>
-              <i class="fa-sharp fa-solid fa-star-sharp"></i>
-              <i class="fa-sharp fa-solid fa-star-sharp"></i>
-              <i class="fa-sharp fa-solid fa-star-sharp"></i>
-            </div>
-            <h1 data-animation-in="fadeInUp" data-delay-in="0.3">Book Your Dream Hotel <br />With Hoteler</h1>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <!-- End Banner Section -->
-
-  <!-- Form Section -->
-  <div class="checkout-form-section-two">
-    <div class="container">
-      <div class="checkout-form">
-        <div class="checkout-field">
-          <h4>Check-In</h4>
-          <div class="chk-field">
-            <input class="date-pick" type="text" placeholder="31 Dec 2025" />
-            <i class="fas fa-angle-down"></i>
-          </div>
-        </div>
-        <div class="checkout-field">
-          <h4>Check-Out</h4>
-          <div class="chk-field">
-            <input class="date-pick" type="text" placeholder="31 Dec 2025" />
-            <i class="fas fa-angle-down"></i>
-          </div>
-        </div>
-        <div class="checkout-field select-field br-0">
-          <h4>Quests</h4>
-          <div class="chk-field">
-            <i class="fas fa-angle-down"></i>
-            <select>
-              <option>2 </option>
-              <option>1 </option>
-              <option>2 </option>
-              <option>3 </option>
-            </select>
-          </div>
-        </div>
-        <a href="page-contact.html" class="theme-btn btn-style-one"><span class="btn-title">CHECK <br />AVAILABILITY</span></a>
-      </div>
-    </div>
-  </div>
-  <!-- End Form Section -->
-
-  <!-- Service Section three -->
-  <section class="service-section-three">
-    <div class="auto-container">
-      <div class="sec-title text-center">
-        <span class="sub-title">What we offer</span>
-        <h2>Get Our Special Offer.</h2>
-      </div>
-      <div class="outer-box">
-        <div class="row">
-          <!-- service-block -->
-          <div class="service-block-three col-lg-4 col-md-6 wow fadeInUp">
-            <div class="inner-box">
-              <figure class="image"><img src="images/resource/service1-1.jpg" alt=""></figure>
-              <div class="content-box">
-                <h6 class="title"><a href="room-details.html">Family Discount</a></h6>
+                <div class="btn-box">
+                  <a href="index-11-single.html" class="btn-style-modern"
+                    >VIEW HOTEL</a
+                  >
+                </div>
               </div>
             </div>
           </div>
-          <!-- service-block -->
-          <div class="service-block-three col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-            <div class="inner-box">
-              <figure class="image"><img src="images/resource/service1-2.jpg" alt=""></figure>
+
+          <!-- ======= Feature Row – Aura Puri (corrected) ======= -->
+          <div class="row feature-row">
+            <!-- Content column (unchanged) -->
+            <div class="content-column col-lg-6">
               <div class="content-box">
-                <h6 class="title"><a href="room-details.html">Couples offer</a></h6>
+                <span class="sub-title">DISCOVER</span>
+                <h2>THE AURA PURI</h2>
+                <div class="text">
+                  <i class="fas fa-quote-left"></i>
+                  Experience the tranquil charm of Puri at The Aura Puri — where
+                  luxury meets coastal elegance. From stunning sea views to
+                  curated amenities, every moment here is designed to offer
+                  peace, comfort, and an unforgettable stay.
+                </div>
+
+                <div class="key-features">
+                  <ul>
+                    <li><i class="fas fa-wifi"></i> WiFi</li>
+                    <li><i class="fas fa-snowflake"></i> AC Room</li>
+                    <li><i class="fas fa-bed"></i> Comfortable Bed</li>
+
+                    <li><i class="fas fa-concierge-bell"></i> Room Service</li>
+                    <li><i class="fas fa-headset"></i> 24x7 Support</li>
+                    <li><i class="fas fa-city"></i> Rooftop Restaurant</li>
+                  </ul>
+                </div>
+                <div class="btn-box">
+                  <a href="index-11-single1.html" class="btn-style-modern"
+                    >VIEW HOTEL</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <!-- service-block -->
-          <div class="service-block-three col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms">
-            <div class="inner-box">
-              <figure class="image"><img src="images/resource/service1-3.jpg" alt=""></figure>
-              <div class="content-box">
-                <h6 class="title"><a href="room-details.html">Buy One Get One Free</a></h6>
+
+            <!-- Image Carousel -->
+            <div class="image-column col-lg-6">
+              <div
+                id="hotel2Carousel"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <!-- Indicators (now 5, matching the slides) -->
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#hotel2Carousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#hotel2Carousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#hotel2Carousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#hotel2Carousel"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#hotel2Carousel"
+                    data-bs-slide-to="4"
+                    aria-label="Slide 5"
+                  ></button>
+                </div>
+
+                <!-- Slides -->
+                <div class="carousel-inner">
+                  <!-- 1 – night facade -->
+                  <div class="carousel-item active">
+                    <img
+                      src="images/Aurapuri/facade/nightfacadepuri.avif"
+                      class="d-block w-100"
+                      alt="Aura Puri – Night Facade"
+                    />
+                  </div>
+
+                  <!-- 2 – day facade -->
+                  <div class="carousel-item">
+                    <img
+                      src="images/Aurapuri/facade/Facade%20(1).jpg"
+                      class="d-block w-100"
+                      alt="Aura Puri – Day Facade"
+                    />
+                  </div>
+
+                  <!-- 3 – reception -->
+                  <div class="carousel-item">
+                    <img
+                      src="images/Aurapuri/reception/Reception.jpg"
+                      class="d-block w-100"
+                      alt="Aura Puri – Reception"
+                    />
+                  </div>
+
+                  <!-- 4 – rooftop dining -->
+                  <div class="carousel-item">
+                    <img
+                      src="images/Aurapuri/rooftop/dinning%202.jpg"
+                      class="d-block w-100"
+                      alt="Aura Puri – Rooftop Dining"
+                    />
+                  </div>
+
+                  <!-- 5 – deluxe sea‑view room -->
+                  <div class="carousel-item">
+                    <img
+                      src="images/Aurapuri/rooms/Deluxe%20Room%20with%20Sea%20View.jpg"
+                      class="d-block w-100"
+                      alt="Aura Puri – Deluxe Room with Sea View"
+                    />
+                  </div>
+                </div>
+
+                <!-- Controls -->
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#hotel2Carousel"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#hotel2Carousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Service section -->
+      </section>
 
-  <!-- About Section -->
-  <section class="about-section-two pt-0">
-    <div class="anim-icons">
-      <img class="image-1" src="images/icons/icon-home1.png" alt="">
-    </div>
-    <div class="auto-container">
-      <div class="row">
-        <!-- Content Column -->
-        <div class="content-column col-lg-7 wow fadeInRight" data-wow-delay="600ms">
-          <div class="inner-column">
-            <div class="sec-title">
-              <span class="sub-title style-three">LUXURY HOTELer</span>
-              <h2>We Provide Outdoor <br />Activities To All Visitors</h2>
-              <div class="text">San Francisco has hills with views, the coast, excellent food & has been voted the happiest, healthiest and fittest city in the States many times.</div>
+      <!-- Amenities Section -->
+      <section
+        class="room-service-section pt-120 pb-60"
+        id="ourAmenitiesSection"
+      >
+        <div class="auto-container">
+          <div class="sec-title text-center">
+            <span class="sub-title">Our Amenities</span>
+            <h2>Crafted for Comfort & Convenience</h2>
+          </div>
+
+          <div class="row">
+            <!-- Swimming Pool -->
+            <div class="room-service-block-one col-lg-4 col-sm-6 wow fadeInUp">
+              <div class="inner-box">
+                <div class="image-box">
+                  <figure class="image mb-0">
+                    <a href="page-service-details.html">
+                      <img
+                        src="./images/Aurabbsr/Dining/swimmingpool.jpeg"
+                        alt="Swimming Pool"
+                      />
+                    </a>
+                  </figure>
+                </div>
+                <div class="content-box">
+                  <div class="inner-box">
+                    <h4 class="title">
+                      <a href="page-service-details.html">Swimming Pool</a>
+                    </h4>
+                    <p class="text-muted mt-1">
+                      Dive into relaxation with our crystal-clear pool, perfect
+                      for parties and leisure swims.
+                    </p>
+                  </div>
+                  <div
+                    class="facilities-box align-items-center d-flex justify-content-between"
+                  >
+                    <ul class="facilities-list">
+                      <li>
+                        <i class="fal fa-clock me-2"></i> 7:00 AM – 10:00 AM
+                      </li>
+                      <li>
+                        <i class="fal fa-umbrella-beach me-2"></i>Pool-Party
+                      </li>
+                    </ul>
+                    <ul class="facilities-list">
+                      <li>
+                        <i class="fal fa-clock me-2"></i> 1:00 PM – 10:00 PM
+                      </li>
+                      <li><i class="fal fa-shower me-2"></i> Changing Rooms</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <!-- Restaurant -->
+            <div
+              class="room-service-block-one col-lg-4 col-sm-6 wow fadeInUp"
+              data-wow-delay="200ms"
+            >
+              <div class="inner-box">
+                <div class="image-box">
+                  <figure class="image mb-0">
+                    <a href="page-service-details.html">
+                      <img
+                        src="images/Aurabbsr/Dining/MAX01492_1.jpg"
+                        alt="Restaurant"
+                      />
+                    </a>
+                  </figure>
+                </div>
+                <div class="content-box">
+                  <div class="inner-box">
+                    <h4 class="title">
+                      <a href="page-service-details.html"
+                        >Multi-Cuisine VEG-Restaurant</a
+                      >
+                    </h4>
+                    <p class="text-muted mt-1">
+                      Savor authentic vegetarian delights with curated vegan,
+                      Jain, and regional specialties.
+                    </p>
+                  </div>
+                  <div
+                    class="facilities-box align-items-center d-flex justify-content-between"
+                  >
+                    <ul class="facilities-list">
+                      <li>
+                        <i class="fal fa-utensils me-2"></i> Catering & Dining
+                      </li>
+                      <li>
+                        <i class="fal fa-seedling me-2"></i> Vegan & Jain
+                        Options
+                      </li>
+                    </ul>
+                    <ul class="facilities-list">
+                      <li>
+                        <i class="fal fa-mug-hot me-2"></i> Barista Coffee
+                      </li>
+                      <li>
+                        <i class="fal fa-clock me-2"></i> 8:00 AM – 10:30 PM
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Conference Hall -->
+            <div
+              class="room-service-block-one col-lg-4 col-sm-6 wow fadeInUp"
+              data-wow-delay="300ms"
+            >
+              <div class="inner-box">
+                <div class="image-box">
+                  <figure class="image mb-0">
+                    <a href="page-service-details.html">
+                      <img
+                        src="images/Aurapuri/dinning/conferencehall.jpeg"
+                        alt="Conference Hall"
+                      />
+                    </a>
+                  </figure>
+                </div>
+                <div class="content-box">
+                  <div class="inner-box">
+                    <h4 class="title">
+                      <a href="page-service-details.html">Conference Hall</a>
+                    </h4>
+                    <p class="text-muted mt-1">
+                      Host business meetings or private events in a
+                      fully-equipped, professional setting.
+                    </p>
+                  </div>
+                  <div
+                    class="facilities-box align-items-center d-flex justify-content-between"
+                  >
+                    <ul class="facilities-list">
+                      <li><i class="fal fa-users me-2"></i> 40-60 Capacity</li>
+                      <li>
+                        <i class="fal fa-tv me-2"></i> 4K Projector & AV System
+                      </li>
+                    </ul>
+                    <ul class="facilities-list">
+                      <li><i class="fal fa-wifi me-2"></i> Wi-Fi</li>
+                      <li>
+                        <i class="fal fa-coffee me-2"></i> Tea/Coffee & Catering
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section-->
+
+      <!-- Video Section -->
+      <section class="video-section-four" id="videoSection"></section>
+      <script>
+        const videoSectionData = {
+          backgroundImage: "images/background/video-bg3.jpg",
+          title: "Discover Your Paradise <br />Where You Are",
+          videoUrl: "https://www.youtube.com/watch?v=Fvae8nxzVz4",
+          infoText:
+            "Sed imperdiet dignissim odio dignissim bibendum. Praesent porttitor tristique velit. efficitur, a pulvinar sem hasellus.",
+          consultationLink: {
+            text: "Get a Free Consultation",
+            url: "page-contact.html",
+          },
+        };
+
+        const section = document.getElementById("videoSection");
+
+        section.innerHTML = `
+          <div class="bg bg-image" style="background-image: url(${videoSectionData.backgroundImage})"></div>
+          <div class="auto-container">
             <div class="outer-box">
-              <div class="info-block">
-                <div class="inner">
-                  <div class="icon-box"><i class="flaticon-light"></i></div>
-                  <h4 class="title">The Best <br />Lighting</h4>
-                </div>
+              <div class="sec-title light wow fadeInUp">
+                <h2>${videoSectionData.title}</h2>
               </div>
-              <div class="info-block">
-                <div class="inner">
-                  <div class="icon-box"><i class="flaticon-pool"></i></div>
-                  <h4 class="title">The Best <br />Swiming</h4>
+              <div class="btn-box">
+                <a
+                  href="${videoSectionData.videoUrl}"
+                  class="play-now-two"
+                  data-fancybox="gallery"
+                  data-caption=""
+                >
+                  <i class="fa-solid fa-play"></i>
+                  <span class="ripple"></span>
+                </a>
+              </div>
+              <div class="info-text">
+                <div class="inner-info">
+                  <div class="text">${videoSectionData.infoText}</div>
+                  <a href="${videoSectionData.consultationLink.url}" class="link">
+                    ${videoSectionData.consultationLink.text}
+                    <i class="icon fas fa-arrow-right"></i>
+                  </a>
                 </div>
               </div>
             </div>
-            <ul class="list-style-two">
-              <li><i class="icon fa fa-circle-check"></i>It is a long fact that a reader will be distracted by the readable</li>
-              <li><i class="icon fa fa-circle-check"></i>Lorem Ipsum is simply dummy of the printing and industry</li>
-              <li><i class="icon fa fa-circle-check"></i>There are many variations of Lorem Ipsum majority</li>
-            </ul>
-            <div class="btn-box">
-              <a href="page-about.html" class="theme-btn btn-style-one"><span class="btn-title">Discover More</span></a>
-            </div>
           </div>
-        </div>
-        <!-- Image Column -->
-        <div class="image-column col-md-7 col-lg-5">
-          <div class="inner-column wow fadeInLeft">
-            <figure class="image-1 overlay-anim wow reveal-right"><img src="images/resource/about2-1.jpg" alt=""></figure>
-            <figure class="image-2 overlay-anim wow reveal-right"><img src="images/resource/about2-2.jpg" alt=""></figure>
-          </div>
-        </div>
+        `;
+      </script>
+      <!-- End video section -->
 
-      </div>
-    </div>
-  </section>
-  <!--Emd About Section -->
+      <!-- Testimonial Section Two -->
+      <section
+        class="testimonial-section-two style-light"
+        id="ourTestimonialSection"
+      >
+        <div class="testimonial-pattrn1-1 bounce-y"></div>
+        <div class="auto-container">
+          <div class="sec-title text-center">
+            <span class="sub-title">OUR CUSTOMER FEEDBACK</span>
+            <h2>Feedback From Clients</h2>
+          </div>
+          <div class="row">
+            <div class="testimonials overflow-hidden col-lg-12">
+              <!-- Testimonial Slider -->
+              <div class="swiper-container testimonial-slider-content">
+                <div class="swiper-wrapper" id="testimonialSlider"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
 
-  <!-- Room-section two -->
-  <section class="room-service-section pt-120 pb-60">
-    <div class="auto-container">
-      <div class="sec-title text-center">
-        <span class="sub-title">CUSTOMER SERVICES</span>
-        <h2>Book your stay and <br />relax in luxury</h2>
-      </div>
-      <div class="row">
-        <!-- News Block -->
-        <div class="room-service-block-one col-lg-4 col-sm-6 wow fadeInUp">
-          <div class="inner-box">
-            <div class="image-box">
-              <figure class="image mb-0"><a href="room-details.html"><img src="images/resource/room-service1-1.jpg" alt=""></a></figure>
-            </div>
-            <div class="content-box">
-              <div class="inner-box">
-                <h4 class="title"><a href="room-details.html">Junior Suite</a></h4>
-                <div class="price">$150/ Night</div>
-              </div>
-              <div class="facilities-box align-items-center d-flex justify-content-between">
-                <ul class="facilities-list">
-                  <li><i class="fal fa-circle-user me-2"></i> 1-2 Persons</li>
-                  <li><i class="fal fa-bed me-2"></i> King Size Bed</li>
-                </ul>
-                <ul class="facilities-list">
-                  <li><i class="fal fa-bath me-2"></i> Bathtub</li>
-                  <li><i class="fal fa-wifi me-2"></i> Free Wifi</li>
-                </ul>
+              <!-- Testimonial Thumbs -->
+              <div class="swiper-container testimonial-thumbs mx-auto mt-4">
+                <div class="swiper-wrapper" id="testimonialThumbs"></div>
               </div>
             </div>
           </div>
         </div>
-        <!-- News Block -->
-        <div class="room-service-block-one col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="300ms">
-          <div class="inner-box">
-            <div class="image-box">
-              <figure class="image mb-0"><a href="room-details.html"><img src="images/resource/room-service1-2.jpg" alt=""></a></figure>
-            </div>
-            <div class="content-box">
-              <div class="inner-box">
-                <h4 class="title"><a href="room-details.html">Family Suite</a></h4>
-                <div class="price">$250/ Night</div>
-              </div>
-              <div class="facilities-box align-items-center d-flex justify-content-between">
-                <ul class="facilities-list">
-                  <li><i class="fal fa-circle-user me-2"></i> 1-2 Persons</li>
-                  <li><i class="fal fa-bed me-2"></i> King Size Bed</li>
-                </ul>
-                <ul class="facilities-list">
-                  <li><i class="fal fa-bath me-2"></i> Bathtub</li>
-                  <li><i class="fal fa-wifi me-2"></i> Free Wifi</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- News Block -->
-        <div class="room-service-block-one col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="600ms">
-          <div class="inner-box">
-            <div class="image-box">
-              <figure class="image mb-0"><a href="room-details.html"><img src="images/resource/room-service1-3.jpg" alt=""></a></figure>
-            </div>
-            <div class="content-box">
-              <div class="inner-box">
-                <h4 class="title"><a href="room-details.html">Business Suite</a></h4>
-                <div class="price">$550/ Night</div>
-              </div>
-              <div class="facilities-box align-items-center d-flex justify-content-between">
-                <ul class="facilities-list">
-                  <li><i class="fal fa-circle-user me-2"></i> 1-2 Persons</li>
-                  <li><i class="fal fa-bed me-2"></i> King Size Bed</li>
-                </ul>
-                <ul class="facilities-list">
-                  <li><i class="fal fa-bath me-2"></i> Bathtub</li>
-                  <li><i class="fal fa-wifi me-2"></i> Free Wifi</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Room section -->
+      </section>
 
-  <!-- Testimonial Section Two -->
-  <section class="testimonial-section-two pt-0">
-    <div class="anim-icons">
-      <img class="image-1" src="images/icons/shape-5.png" alt="">
-    </div>
-    <div class="auto-container">
-      <div class="row">
-        <div class="testimonials overflow-hidden col-lg-12">
-          <!-- Testimonial Slider -->
-          <div class="swiper-container testimonial-slider-content">
-            <div class="swiper-wrapper">
-              <!-- Testimonial Block -->
-              <div class="testimonial-block-two swiper-slide">
-                <div class="inner-box">
-                  <div class="quote-icon"><img class="icon-img" src="images/icons/testi-shape1.png" alt=""></div>
-                  <div class="text">Staying at Hoteler was an unforgettable experience. The staff went above and beyond to ensure our comfort and satisfaction. The room was immaculate, with breath-taking views </div>
-                  <div class="info-box">
-                    <h5 class="name">Jenny Wilson</h5>
-                    <span class="designation">Business Owner</span>                    
-                  </div>
-                </div>
-              </div>
-              <!-- Testimonial Block -->
-              <div class="testimonial-block-two swiper-slide">
-                <div class="inner-box">
-                  <div class="quote-icon"><img class="icon-img" src="images/icons/testi-shape1.png" alt=""></div>
-                  <div class="text">Staying at Hoteler was an unforgettable experience. The staff went above and beyond to ensure our comfort and satisfaction. The room was immaculate, with breath-taking views </div>
-                  <div class="info-box">
-                    <h5 class="name">Marvin McKinney</h5>
-                    <span class="designation">President of Sales</span>                    
-                  </div>
-                </div>
-              </div>
-              <!-- Testimonial Block -->
-              <div class="testimonial-block-two swiper-slide">
-                <div class="inner-box">
-                  <div class="quote-icon"><img class="icon-img" src="images/icons/testi-shape1.png" alt=""></div>
-                  <div class="text">Staying at Hoteler was an unforgettable experience. The staff went above and beyond to ensure our comfort and satisfaction. The room was immaculate, with breath-taking views </div>
-                  <div class="info-box">
-                    <h5 class="name">Jenny Wilson</h5>
-                    <span class="designation">Business Owner</span>                    
-                  </div>
-                </div>
-              </div>
-            </div>
+      <script>
+        const testimonialData = [
+          {
+            text: `Staying at Aura Hotel felt like home away from home. The rooms were pristine, the staff was incredibly courteous, and the entire experience was seamless. Highly recommended for both business and leisure stays!`,
+            name: "Ritika Sen",
+            designation: "Marketing Executive, Mumbai",
+            rating: 5,
+            image: "https://i.pravatar.cc/100?img=12",
+          },
+          {
+            text: `From booking to check-out, everything was perfect. The room was spacious, the food was delicious, and the travel assistance made our city tours so easy. Aura Hotel truly exceeded our expectations.`,
+            name: "Amitava Dey",
+            designation: "Travel Blogger, Kolkata",
+            rating: 5,
+            image: "https://i.pravatar.cc/100?img=34",
+          },
+          {
+            text: `I hosted a small business meet at Aura Hotel and was amazed at how smoothly everything went. The banquet hall, hospitality, and attention to detail were top-notch. Will definitely return!`,
+            name: "Shruti Pradhan",
+            designation: "Event Organizer, Pune",
+            rating: 4,
+            image: "https://i.pravatar.cc/100?img=26",
+          },
+          {
+            text: `The Aura BBSR is the perfect combination of elegance and comfort. I loved the room interiors, quick service, and their attention to hygiene. A must-stay for anyone visiting Bhubaneswar.`,
+            name: "Nilesh Kumar",
+            designation: "IT Consultant, Bengaluru",
+            rating: 5,
+            image: "https://i.pravatar.cc/100?img=47",
+          },
+          {
+            text: `The staff at Aura Hotel made our anniversary truly special. From the flower decorations to the special dinner, every detail was beautiful. We'll cherish this experience forever.`,
+            name: "Ananya & Rohit",
+            designation: "Couple Traveller, Delhi",
+            rating: 5,
+            image: "https://i.pravatar.cc/100?img=66",
+          },
+          {
+            text: `I travel frequently for work and this was one of the best hotel stays I’ve had. Super fast check-in, peaceful ambiance, and wonderful amenities. Top-notch hospitality!`,
+            name: "Rahul Das",
+            designation: "Sales Head, Hyderabad",
+            rating: 4,
+            image: "https://i.pravatar.cc/100?img=22",
+          },
+        ];
+
+        const sliderContainer = document.getElementById("testimonialSlider");
+        const thumbsContainer = document.getElementById("testimonialThumbs");
+
+        testimonialData.forEach((item) => {
+          const stars =
+            Array(item.rating)
+              .fill('<i class="fas fa-star text-warning"></i>')
+              .join("") +
+            Array(5 - item.rating)
+              .fill('<i class="far fa-star text-muted"></i>')
+              .join("");
+
+          const slide = document.createElement("div");
+          slide.className = "testimonial-block-two swiper-slide";
+          slide.innerHTML = `
+      <div class="inner-box p-4 shadow rounded bg-white">
+        <div class="quote-icon mb-2">
+          <i class="icon fa fa-quote-left text-primary fa-2x"></i>
+        </div>
+        <div class="text mb-3 text-dark">${item.text}</div>
+        <div class="stars mb-2">${stars}</div>
+        <div class="info-box">
+          <h5 class="name mb-0">${item.name}</h5>
+          <span class="designation text-muted">${item.designation}</span>
+        </div>
+      </div>
+    `;
+          sliderContainer.appendChild(slide);
+
+          const thumb = document.createElement("div");
+          thumb.className = "swiper-slide";
+          thumb.innerHTML = `<img src="${item.image}" alt="${item.name}" class="rounded-circle" style="width: 60px; height: 60px; object-fit: cover;" />`;
+          thumbsContainer.appendChild(thumb);
+        });
+      </script>
+
+      <!-- End Testimonial Section Two -->
+
+      <!-- Modern Gallery Section -->
+      <section class="modern-gallery-section" id="gallerySection">
+        <div class="auto-container">
+          <div class="sec-title text-center">
+            <span class="sub-title">Photo Highlights</span>
+            <h2>Experience Our Hotel Through Pictures</h2>
+          </div>
+
+          <!-- Swiper -->
+          <div class="swiper myGallerySwiper">
+            <div class="swiper-wrapper" id="galleryContainer"></div>
+
+            <!-- Arrows -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
+
+            <!-- Dots -->
+            <div class="swiper-pagination"></div>
           </div>
-          <!-- Testimonial Thumb -->
-          <div class="swiper-container testimonial-thumbs mx-auto">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="images/resource/testi2-thumb1.png" alt=""/></div>
-              <div class="swiper-slide"><img src="images/resource/testi2-thumb2.png" alt=""/></div>
-              <div class="swiper-slide"><img src="images/resource/testi2-thumb3.png" alt=""/></div>
-            </div>
+        </div>
+      </section>
+      <script>
+        const galleryData = [
+          {
+            img: "images/Aurabbsr/Day%20Facade/MAX01447%20copy_1.jpg",
+            category: "THE AURA BBSR",
+            date: "May 25, 2025",
+            title: "Day Facade – Grand Entrance of Aura BBSR",
+          },
+          {
+            img: "images/Aurabbsr/Dining/swimmingpool.jpeg",
+            category: "THE AURA BBSR",
+            date: "May 25, 2025",
+            title: "Swimming Pool – The Beautiful Pool of Aura BBSR",
+          },
+          {
+            img: "images/Aurabbsr/Maple/MAX01639_1.jpg",
+            category: "Deluxe Room BBSR",
+            date: "May 25, 2025",
+            title: "Maple Deluxe Room – Comfort Redefined",
+          },
+          {
+            img: "images/Aurapuri/reception/Reception.jpg",
+            category: "THE AURA PURI",
+            date: "May 25, 2025",
+            title: "Elegant Reception Area at Aura Puri",
+          },
+          {
+            img: "images/Aurapuri/rooftop/dinning%202.jpg",
+            category: "Dining of PURI",
+            date: "May 25, 2025",
+            title: "Rooftop Dining with a Panoramic View",
+          },
+          {
+            img: "images/Aurabbsr/Dining/MAX01482_1.jpg",
+            category: "Dining of BBSR",
+            date: "June 1, 2025",
+            title: "Fine Dining Experience at Aura BBSR",
+          },
+          {
+            img: "images/Aurabbsr/Maple/MAX01577_1.jpg",
+            category: "Room of BBSR",
+            date: "June 1, 2025",
+            title: "Spacious Rooms with Modern Interiors",
+          },
+          {
+            img: "images/Aurapuri/rooms/Rooms%20with%20Sea%20View.jpg",
+            category: "Room of Puri",
+            date: "June 1, 2025",
+            title: "Rooms with Mesmerizing Sea View",
+          },
+          {
+            img: "images/Aurabbsr/Parking/MAX01809_1.jpg",
+            category: "Parking of BBSR",
+            date: "June 1, 2025",
+            title: "Spacious & Secured Parking Zone",
+          },
+          {
+            img: "images/Aurabbsr/Corridor_Stairs_Lift/MAX01547_1.jpg",
+            category: "Corridor of BBSR",
+            date: "June 1, 2025",
+            title: "Modern Corridors & Lift Access Areas",
+          },
+        ];
+
+        const galleryContainer = document.getElementById("galleryContainer");
+
+        galleryData.forEach((item) => {
+          const slide = document.createElement("div");
+          slide.className = "swiper-slide";
+
+          slide.innerHTML = `
+      <div class="gallery-card">
+        <div class="img-box">
+          <img src="${item.img}" alt="${item.title}" />
+        </div>
+        <div class="content">
+          <div class="meta">
+            <span>${item.category}</span>
+            <span>${item.date}</span>
           </div>
+          <h4>${item.title}</h4>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- End Testimonial Section Two -->
+    `;
 
-  <!-- pricing-section -->
-  <section class="pricing-section">
-    <div class="auto-container">
-      <div class="sec-title text-center wow fadeInUp">
-        <span class="sub-title">Hoteler best menus</span>
-        <h2>Unique Specialty Foods</h2>
-      </div>
-      <div class="row gx-xl-5 wow slideInUp">
-        <!-- pricing-block -->
-        <div class="pricing-block-two col-lg-6 col-md-6 col-sm-12">
-          <div class="inner-box">
-            <figure class="thumb overlay-anim"><a href="page-pricing.html"><img src="images/resource/pricing2-1.png" alt=""></a></figure>
-            <div class="content-box">
-              <h6 class="title">Pasta With Fish<span>$39</span></h6>
-              <span class="designation">Lorem Ipsum is that it smt</span>
-            </div>
-            <span class="food-pack">starter</span>
-          </div>
-        </div>
-        <!-- pricing-block -->
-        <div class="pricing-block-two col-lg-6 col-md-6 col-sm-12">
-          <div class="inner-box">
-            <figure class="thumb overlay-anim"><a href="page-pricing.html"><img src="images/resource/pricing2-2.png" alt=""></a></figure>
-            <div class="content-box">
-              <h6 class="title">Noodles<span>$16</span></h6>
-              <span class="designation">Lorem Ipsum is that it smt</span>
-            </div>
-            <span class="food-pack">new</span>
-          </div>
-        </div>
-        <!-- pricing-block -->
-        <div class="pricing-block-two col-lg-6 col-md-6 col-sm-12">
-          <div class="inner-box">
-            <figure class="thumb overlay-anim"><a href="page-pricing.html"><img src="images/resource/pricing2-3.png" alt=""></a></figure>
-            <div class="content-box">
-              <h6 class="title">Fresh Meat<span>$26</span></h6>
-              <span class="designation">Lorem Ipsum is that it smt</span>
-            </div>
-            <span class="food-pack">new</span>
-          </div>
-        </div>
-        <!-- pricing-block -->
-        <div class="pricing-block-two col-lg-6 col-md-6 col-sm-12">
-          <div class="inner-box">
-            <figure class="thumb overlay-anim"><a href="page-pricing.html"><img src="images/resource/pricing2-4.png" alt=""></a></figure>
-            <div class="content-box">
-              <h6 class="title">Chicken<span>$19</span></h6>
-              <span class="designation">Lorem Ipsum is that it smt</span>
-            </div>
-            <span class="food-pack">vegan</span>
-          </div>
-        </div>
-        <!-- pricing-block -->
-        <div class="pricing-block-two col-lg-6 col-md-6 col-sm-12">
-          <div class="inner-box">
-            <figure class="thumb overlay-anim"><a href="page-pricing.html"><img src="images/resource/pricing2-5.png" alt=""></a></figure>
-            <div class="content-box">
-              <h6 class="title">Spaghetti<span>$37</span></h6>
-              <span class="designation">Lorem Ipsum is that it smt</span>
-            </div>
-            <span class="food-pack">new</span>
-          </div>
-        </div>
-        <!-- pricing-block -->
-        <div class="pricing-block-two col-lg-6 col-md-6 col-sm-12">
-          <div class="inner-box">
-            <figure class="thumb overlay-anim"><a href="page-pricing.html"><img src="images/resource/pricing2-6.png" alt=""></a></figure>
-            <div class="content-box">
-                <h6 class="title">Vegetarian Fried<span>$34</span></h6>
-                <span class="designation">Lorem Ipsum is that it smt</span>
-            </div>
-            <span class="food-pack">new</span>
-          </div>
-        </div>
-        <!-- pricing-block -->
-        <div class="pricing-block-two col-lg-6 col-md-6 col-sm-12">
-          <div class="inner-box">
-            <figure class="thumb overlay-anim"><a href="page-pricing.html"><img src="images/resource/pricing2-7.png" alt=""></a></figure>
-            <div class="content-box">
-              <h6 class="title">Vegetarian Soup<span>$42</span></h6>
-              <span class="designation">Lorem Ipsum is that it smt</span>
-            </div>
-            <span class="food-pack">glutan free</span>
-          </div>
-        </div>
-        <!-- pricing-block -->
-        <div class="pricing-block-two col-lg-6 col-md-6 col-sm-12">
-          <div class="inner-box">
-            <figure class="thumb overlay-anim"><a href="page-pricing.html"><img src="images/resource/pricing2-8.png" alt=""></a></figure>
-            <div class="content-box">
-                <h6 class="title">Salmon Pasta<span>$71</span></h6>
-                <span class="designation">Lorem Ipsum is that it smt</span>
-            </div>
-            <span class="food-pack">fish</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End pricing-section -->
+          galleryContainer.appendChild(slide);
+        });
 
-  <!-- video-section -->
-  <section class="video-section">
-    <div class="bg bg-image" data-speed="0.5" data-parallax="scroll" style="background-image: url(images/background/video-bg.jpg);">
-    </div>
-    <div class="auto-container">
-      <div class="row align-items-center">
-        <div class="btn-column col-lg-12">
-          <div class="inner-column text-center">
-            <a class="play-now-two" href="https://www.youtube.com/watch?v=Fvae8nxzVz4" data-fancybox="gallery" data-caption="">
-              <i class="icon fa-solid fa-play"></i>
-              <span class="ripple"></span>
-            </a>
+        // Initialize Swiper
+        new Swiper(".myGallerySwiper", {
+          loop: true,
+          slidesPerView: 1,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          },
+        });
+      </script>
+
+      <!-- Gallery Section -->
+
+      <!-- Main Footer -->
+      <footer class="main-footer footer-style-one">
+        <style>
+          /* Resize the logo */
+          .footer-logo img {
+            max-width: 120px;
+            height: auto;
+          }
+
+          /* Reduce footer spacing */
+          .main-footer .widgets-section {
+            padding: 40px 0 20px;
+          }
+
+          .main-footer .footer-bottom {
+            padding: 10px 0;
+          }
+
+          .main-footer .footer-widget {
+            margin-bottom: 20px;
+          }
+
+          .main-footer .widget-title {
+            margin-bottom: 12px;
+          }
+
+          .main-footer .text,
+          .main-footer .list-info {
+            font-size: 14px;
+            line-height: 20px;
+          }
+
+          .main-footer ul.social-icon {
+            gap: 8px;
+          }
+        </style>
+
+        <!-- Widgets Section -->
+        <div class="widgets-section">
+          <div class="auto-container">
+            <div class="row" id="footerWidgets"></div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- End video section -->
 
-  <!-- Team Section -->
-  <section class="team-section">
-    <div class="anim-icons">
-      <img class="image-1" src="images/icons/shape-15.png" alt="">
-    </div>
-    <div class="auto-container">
-      <div class="sec-title text-center wow fadeInUp">
-        <span class="sub-title">TEAM MEMBER</span>
-        <h2>Check Out Our Expert <br />Hoteler Members</h2>
-      </div>
-      <div class="row">
-        <!-- Team block -->
-        <div class="team-block col-lg-3 col-sm-6">
-          <div class="inner-box wow fadeInLeft">
-            <div class="image-box">
-              <div class="inner-box">
-                <figure class="image overlay-anim"><a href="page-team-details.html"><img src="images/resource/team-1.jpg" alt=""></a></figure>
-              </div>
-              <div class="info-box">
-                <h4 class="name"><a href="page-team-details.html">Michael Dean</a></h4>
-                <span class="designation">CEO & Founder</span>
-                <div class="social-links">
-                  <a href="#"><i class="fab fa-facebook"></i></a>
-                  <a href="#"><i class="fab fa-x-twitter"></i></a>
-                  <a href="#"><i class="fab fa-linkedin"></i></a>
-                  <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <div class="auto-container">
+            <div class="inner-container">
+              <div class="copyright-text">
+                © 2025 <span>The Aura Hotel</span> | All rights reserved
               </div>
             </div>
           </div>
         </div>
-        <!-- Team block -->
-        <div class="team-block col-lg-3 col-sm-6">
-          <div class="inner-box wow fadeInLeft" data-wow-delay="200ms">
-            <div class="image-box">
-              <div class="inner-box">
-                <figure class="image overlay-anim"><a href="page-team-details.html"><img src="images/resource/team-2.jpg" alt=""></a></figure>
-              </div>
-              <div class="info-box">
-                <h4 class="name"><a href="page-team-details.html">Frank Burton</a></h4>
-                <span class="designation">Kitchen Manager</span>
-                <div class="social-links">
-                  <a href="#"><i class="fab fa-facebook"></i></a>
-                  <a href="#"><i class="fab fa-x-twitter"></i></a>
-                  <a href="#"><i class="fab fa-linkedin"></i></a>
-                  <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-              </div>
+      </footer>
+      <script>
+        const footerData = [
+          {
+            type: "about",
+            logo: "images/logoaura.png",
+            text: "A boutique haven in Bhubaneswar. Reach out to plan your stay, host an event, or simply say hello.",
+            subscribe: true,
+            socials: [
+              {
+                icon: "fab fa-facebook-f",
+                url: "https://facebook.com/theaurahotel",
+              },
+              {
+                icon: "fab fa-instagram",
+                url: "https://instagram.com/theaurahotel",
+              },
+              {
+                icon: "fab fa-linkedin-in",
+                url: "https://linkedin.com/company/theaurahotel",
+              },
+              { icon: "fab fa-whatsapp", url: "https://wa.me/919000000000" },
+            ],
+          },
+          {
+            type: "links",
+            title: "Stay With Us",
+            links: [
+              "Rooms & Suites",
+              "Dining",
+              "Spa & Wellness",
+              "Meetings & Events",
+              "Special Offers",
+              "Gallery",
+            ],
+          },
+          {
+            type: "links",
+            title: "Explore",
+            links: [
+              "About The Aura",
+              "Our Story",
+              "Careers",
+              "Blog",
+              "Contact Us",
+            ],
+          },
+          {
+            type: "contacts",
+            offices: [
+              {
+                title: "Bhubaneswar",
+                address:
+                  "Plot 15, Infocity Road, Bhubaneswar 751024, Odisha, India",
+                phone: "+91 845 500 7723",
+                email: "sales@lazystay.com",
+              },
+              {
+                title: "Office",
+                address: "Plot No. 318/1825/2929, KIIT Law Campus 11 Road, Patia, Bhubaneswar ",
+                phone: "+91 84 5500 7723",
+                email: "sales@lazystay.com",
+              },
+            ],
+          },
+        ];
+
+        const container = document.getElementById("footerWidgets");
+
+        footerData.forEach((block) => {
+          const column = document.createElement("div");
+          column.className = "footer-column col-lg-3 col-sm-6";
+
+          if (block.type === "about") {
+            column.innerHTML = `
+        <div class="footer-widget about-widget wow fadeInLeft">
+          <div class="widget-content">
+            <div class="logo footer-logo">
+              <a href="#"><img src="${block.logo}" alt="The Aura logo" /></a>
             </div>
+            <div class="text mb-0">${block.text}</div>
           </div>
         </div>
-        <!-- Team block -->
-        <div class="team-block col-lg-3 col-sm-6">
-          <div class="inner-box wow fadeInLeft" data-wow-delay="300ms">
-            <div class="image-box">
-              <div class="inner-box">
-                <figure class="image overlay-anim"><a href="page-team-details.html"><img src="images/resource/team-3.jpg" alt=""></a></figure>
-              </div>
-              <div class="info-box">
-                <h4 class="name"><a href="page-team-details.html">Mya Mullins</a></h4>
-                <span class="designation">Hotel Manager</span>
-                <div class="social-links">
-                  <a href="#"><i class="fab fa-facebook"></i></a>
-                  <a href="#"><i class="fab fa-x-twitter"></i></a>
-                  <a href="#"><i class="fab fa-linkedin"></i></a>
-                  <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Team block -->
-        <div class="team-block col-lg-3 col-sm-6">
-          <div class="inner-box wow fadeInLeft" data-wow-delay="400ms">
-            <div class="image-box">
-              <div class="inner-box">
-                <figure class="image overlay-anim"><a href="page-team-details.html"><img src="images/resource/team-4.jpg" alt=""></a></figure>
-              </div>
-              <div class="info-box">
-                <h4 class="name"><a href="page-team-details.html">Ralph Nguyen</a></h4>
-                <span class="designation">Room Service</span>
-                <div class="social-links">
-                  <a href="#"><i class="fab fa-facebook"></i></a>
-                  <a href="#"><i class="fab fa-x-twitter"></i></a>
-                  <a href="#"><i class="fab fa-linkedin"></i></a>
-                  <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Team Section -->
-
-  <!-- Funfact Section -->
-  <section class="funfact-section">
-    <div class="bg bg-image" style="background-image: url(images/icons/bg-shape2.png);"></div>
-    <div class="container">
-      <div class="fact-counter">
-        <div class="row">
-          <!-- Counter block-->
-          <div class="counter-block-one col-lg-3 col-sm-6">
-            <div class="inner-box">
-              <div class="count-box"><span class="count-text" data-speed="3000" data-stop="20">0</span></div>
-              <div class="counter-text">Projects</div>
-            </div>
-          </div>
-          <!-- Counter block-->
-          <div class="counter-block-one col-lg-3 col-sm-6">
-            <div class="inner-box">
-              <div class="count-box"><span class="count-text" data-speed="3000" data-stop="10">0</span></div>
-              <div class="counter-text">People</div>
-            </div>
-          </div>
-          <!-- Counter block-->
-          <div class="counter-block-one col-lg-3 col-sm-6">
-            <div class="inner-box">
-              <div class="count-box"><span class="count-text" data-speed="3000" data-stop="40">0</span></div>
-              <div class="counter-text">Years</div>
-            </div>
-          </div>
-          <!-- Counter block-->
-          <div class="counter-block-one col-lg-3 col-sm-6">
-            <div class="inner-box">
-              <div class="count-box"><span class="count-text" data-speed="3000" data-stop="30">0</span></div>
-              <div class="counter-text">Award Winner</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Funfact Section -->
-
-  <!-- Contact Section -->
-  <section class="contact-section">
-    <div class="bg bg-image wow reveal-top tm-gsap-img-parallax overflow-hidden">
-      <img src="images/background/bg-contact5.jpg" alt="Image">
-    </div>
-    <div class="icon icon-contact-shape1" style="background-image: url(images/icons/shape-4.png)"></div>
-    <div class="auto-container">
-      <div class="outer-box">
-        <div class="row">
-
-          <!-- Form Column -->
-          <div class="form-column col-lg-8 offset-lg-4 col-md-12 col-sm-12">
-            <div class="inner-column">
-              <!-- Contact Form -->
-              <div class="contact-form wow fadeInLeft">
-                <div class="icon-anchor-1 bounce-y"></div>
-                <div class="sec-title">
-                  <span class="sub-title style-three">Contact Us</span>
-                  <h2>Get in Touch</h2>
-                </div>
-
-                <!--Contact Form-->
-                <form method="post" action="https://html.kodesolution.com/2025/hoteler-html/get" id="contact-form">
-                  <div class="row">
-
-                    <div class="form-group col-lg-6 col-md-6">
-                      <input type="text" name="name" placeholder="Your Name" required>
+        ${
+          block.subscribe
+            ? `<div class="footer-widget news-widget wow fadeInLeft" data-wow-delay="400ms">
+                <div class="subscribe-form-three">
+                  <form>
+                    <div class="form-group">
+                      <input type="email" name="email" placeholder="Email Address" required />
+                      <button type="button" class="theme-btn btn-style-one">
+                        <span class="btn-title"><i class="fa fa-paper-plane"></i></span>
+                      </button>
                     </div>
-                    <div class="form-group col-lg-6 col-md-6">
-                      <input type="email" name="email" placeholder="Email Address" required>
-                    </div>
-                    <div class="form-group col-lg-6 col-md-6">
-                      <input type="tex" name="phone" placeholder="Check In" required>
-                    </div>
-                    <div class="form-group col-lg-6 col-md-6">
-                      <input type="text" name="subject" placeholder="Check Out" required>
-                    </div>
-                    <div class="form-group col-lg-12">
-                      <textarea name="textarea" placeholder="Write a Message" rows="2"></textarea>
-                    </div>
-                    <div class="form-group col-lg-12">
-                      <button type="submit" class="theme-btn btn-style-one bg-dark" name="submit-form"><span class="btn-title">Check Availability</span></button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <!--End Contact Form -->
-
-              <div class="contact-block">
-                <div class="inner-box">
-                  <figure class="image icon-contact1"><img src="images/icons/icon-call-2.png" alt="Image"></figure>
-                  <div class="content-box">
-                    <figure class="icon-img"><img src="images/icons/icon-call-1.png" alt=""></figure>
-                    <span class="text">Call us for any inquiry</span>
-                    <a class="text-two" href="tel:+8801750050088">(801) 500 50 088</a>
-                  </div>
+                  </form>
                 </div>
-              </div>
-            </div>
+              </div>`
+            : ""
+        }
+        <div class="footer-widget widget-social wow fadeInLeft" data-wow-delay="300ms">
+          <h4 class="widget-title">Follow Us</h4>
+          <div class="widget-content">
+            <ul class="social-icon">
+              ${block.socials
+                .map(
+                  (s) =>
+                    `<li><a href="${s.url}" target="_blank" rel="noopener"><i class="${s.icon}"></i></a></li>`
+                )
+                .join("")}
+            </ul>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Contact Section -->
+      `;
+          }
 
-  <!-- news-section -->
-  <section class="news-section">
-    <div class="auto-container">
-      <div class="sec-title text-center wow fadeInUp">
-        <span class="sub-title">NEWS & BLOG</span>
-        <h2>Check Latest Blog Post <br />from Blog List</h2>
-      </div>
-      <div class="row">
-        <!-- News Block -->
-        <div class="news-block-four col-lg-4 col-md-6 wow fadeInUp">
-          <div class="inner-box">
-            <div class="image-box">
-              <figure class="image">
-                <a href="news-details.html">
-                  <img src="images/resource/news1-1.jpg" alt="Image">
-                  <img src="images/resource/news1-1.jpg" alt="Image">
-                </a>
-              </figure>
-            </div>
-            <div class="content-box">
-              <ul class="post-meta">
-                <li class="categories"><a href="news-details.html">Relax Zone</a></li>
-                <li class="date">May 15, 2025</li>
-              </ul>
-              <h4 class="title"><a href="news-details.html">Advantages of Offering Online Registration at Your Hotel</a></h4>
-            </div>
+          if (block.type === "links") {
+            column.innerHTML = `
+        <div class="footer-widget links-widget ps-xl-4 wow fadeInLeft" data-wow-delay="200ms">
+          <h4 class="widget-title">${block.title}</h4>
+          <div class="widget-content">
+            <ul class="user-links">
+              ${block.links
+                .map((l) => `<li><a href="#">${l}</a></li>`)
+                .join("")}
+            </ul>
           </div>
         </div>
-        <!-- News Block -->
-        <div class="news-block-four col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms">
-          <div class="inner-box">
-            <div class="image-box">
-              <figure class="image">
-                <a href="news-details.html">
-                  <img src="images/resource/news1-2.jpg" alt="Image">
-                  <img src="images/resource/news1-2.jpg" alt="Image">
-                </a>
-              </figure>
-            </div>
-            <div class="content-box">
-              <ul class="post-meta">
-                <li class="categories"><a href="news-details.html">Royal suite</a></li>
-                <li class="date">Jan 28, 2025</li>
-              </ul>
-              <h4 class="title"><a href="news-details.html">Our Health Club is Now Available for Your Fitness Needs</a></h4>
-            </div>
-          </div>
-        </div>
-        <!-- News Block -->
-        <div class="news-block-four col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="600ms">
-          <div class="inner-box">
-            <div class="image-box">
-              <figure class="image">
-                <a href="news-details.html">
-                  <img src="images/resource/news1-3.jpg" alt="Image">
-                  <img src="images/resource/news1-3.jpg" alt="Image">
-                </a>
-              </figure>
-            </div>
-            <div class="content-box">
-              <ul class="post-meta">
-                <li class="categories"><a href="news-details.html">Apartments</a></li>
-                <li class="date">Oct 20, 2025</li>
-              </ul>
-              <h4 class="title"><a href="news-details.html">Restoring the Lighting Design in the Hotel</a></h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End news section -->
+      `;
+          }
 
-  <!-- Main Footer -->
-  <footer class="main-footer footer-style-one">
-    <!-- Widgets Section -->
-    <div class="widgets-section">
-      <div class="auto-container">
-        <div class="row">
-          <!-- Footer Column -->
-          <div class="footer-column col-lg-4 col-sm-6">
-            <div class="footer-widget about-widget wow fadeInLeft">
+          if (block.type === "contacts") {
+            column.innerHTML = block.offices
+              .map(
+                (office) => `
+            <div class="footer-widget info-widget ps-xl-4 wow fadeInLeft" data-wow-delay="300ms">
+              <h4 class="widget-title">${office.title}</h4>
               <div class="widget-content">
-                <div class="logo"><a href="#"> <img src="images/logo-2.png" alt=""></a></div>
-                <div class="text mb-0">Feel free to reach out if you want collaborate with us, or simply chat.</div>
-              </div>
-            </div>
-            <div class="footer-widget news-widget wow fadeInLeft" data-wow-delay="400ms">
-              <div class="subscribe-form-three">
-                <form method="post" action="#">
-                  <div class="form-group">
-                    <input type="email" name="email" class="email" value="" placeholder="Email Address" required="">
-                    <button type="button" class="theme-btn btn-style-one"><span class="btn-title"><i class="fa fa-paper-plane"></i></span></button>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div class="footer-widget widget-social wow fadeInLeft" data-wow-delay="300ms">
-              <h4 class="widget-title">Follow Us</h4>
-              <div class="widget-content">
-                <ul class="social-icon">
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                  <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                  <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- Footer Column -->
-          <div class="footer-column col-lg-3 col-sm-6 mb-0 ps-xl-5">
-            <div class="footer-widget links-widget ps-xl-5 wow fadeInLeft" data-wow-delay="200ms">
-              <h4 class="widget-title">Services</h4>
-              <div class="widget-content">
-                <ul class="user-links">
-                  <li><a href="#/">Store Directory</a></li>
-                  <li><a href="#/">Top Hotels</a></li>
-                  <li><a href="#/">Quick Links</a></li>
-                  <li><a href="#/">Important Links</a></li>
-                  <li><a href="#/">Insights</a></li>
-                  <li><a href="#/">Knowledge Center</a></li>
-                </ul>
-              </div>
-            </div>                       
-          </div>
-          <!-- Footer Column -->
-          <div class="footer-column col-lg-2 col-sm-6 mb-0 ps-xl-4">
-            <div class="footer-widget links-widget ps-xl-4 wow fadeInLeft" data-wow-delay="200ms">
-              <h4 class="widget-title">Company</h4>
-              <div class="widget-content">
-                <ul class="user-links">
-                  <li><a href="#/">Home</a></li>
-                  <li><a href="#/">About Us</a></li>
-                  <li><a href="#/">Services</a></li>
-                  <li><a href="#/">Career</a></li>
-                  <li><a href="#/">Contact</a></li>
-                </ul>
-              </div>
-            </div>                       
-          </div>
-          <!-- footer column -->
-          <div class="footer-column col-lg-3 col-sm-6">
-            <div class="footer-widget info-widget ps-xl-5 ms-xl-5 mb-30 wow fadeInLeft" data-wow-delay="300ms">
-              <h4 class="widget-title">New York</h4>
-              <div class="widget-content">
-                <!-- Contact List -->
                 <div class="contact-list">
                   <div class="inner">
-                    <div class="list-info">2464 Royal Ln. Mesa, New Jersey 45463</div>
-                    <div class="list-info">(000) 222-0000</div>
-                    <div class="list-info"><a href="https://html.kodesolution.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5e373038311e27312b2c293b3c2d372a3b703d3133">[email&#160;protected]</a></div>
+                    <div class="list-info">${office.address}</div>
+                    <div class="list-info">${office.phone}</div>
+                    <div class="list-info"><a href="mailto:${office.email}">${office.email}</a></div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="footer-widget info-widget ps-xl-5 ms-xl-5 wow fadeInLeft" data-wow-delay="300ms">
-              <h4 class="widget-title">London</h4>
-              <div class="widget-content">
-                <!-- Contact List -->
-                <div class="contact-list">
-                  <div class="inner">
-                    <div class="list-info">1901 Thorn ridge Cir. Shiloh, Hawaii 81063</div>
-                    <div class="list-info">(000) 000-0000</div>
-                    <div class="list-info"><a href="https://html.kodesolution.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e58c8b838aa59c8a9097928087968c9180cb868a88">[email&#160;protected]</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--  Footer Bottom -->
-    <div class="footer-bottom">
-      <div class="auto-container">
-        <div class="inner-container">
-          <div class="copyright-text">© 2025 <span>ThemeMascot</span> Agency</div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!--End Main Footer -->
-  
-  <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
+            </div>`
+              )
+              .join("");
+          }
 
-</div><!-- End Page Wrapper -->
-<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script> 
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/slick-animation.min.js"></script>
-<script src="js/jquery.fancybox.js"></script>
-<script src="js/wow.js"></script>
-<script src="js/appear.js"></script>
-<script src="js/mixitup.js"></script>
-<script src="js/flatpickr.js"></script>
-<script src="js/swiper.min.js"></script>
-<script src="js/gsap.min.js"></script>
-<script src="js/ScrollTrigger.min.js"></script>
-<script src="js/SplitText.min.js"></script>
-<script src="js/splitType.js"></script>
-<script src="js/script.js"></script>
-<script src="js/script-gsap.js"></script>
-</body>
+          container.appendChild(column);
+        });
+      </script>
 
-<!-- Mirrored from html.kodesolution.com/2025/hoteler-html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Jun 2025 15:49:29 GMT -->
+      <!--End Main Footer -->
+    </div>
+    <!-- End Page Wrapper -->
+    <script
+      data-cfasync="false"
+      src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slick-animation.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/mixitup.js"></script>
+    <script src="js/flatpickr.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/SplitText.min.js"></script>
+    <script src="js/splitType.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script-gsap.js"></script>
+    <script>
+      document
+        .querySelector(".search-popup form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const query = this.querySelector('input[name="search-field"]')
+            .value.trim()
+            .toLowerCase();
+          const navItems = document.querySelectorAll(
+            "#mainNav li, #stickyNav li, #mobileNav li"
+          );
+
+          let matchedLink = null;
+
+          navItems.forEach((item) => {
+            const link = item.querySelector("a");
+            if (link) {
+              const text = link.textContent.trim().toLowerCase();
+              if (text.includes(query) && !matchedLink) {
+                matchedLink = link; // take the first match
+              }
+            }
+          });
+
+          if (matchedLink) {
+            // Simulate link click
+            const href = matchedLink.getAttribute("href");
+            if (href.startsWith("#")) {
+              // Anchor scroll
+              const target = document.querySelector(href);
+              if (target) {
+                target.scrollIntoView({ behavior: "smooth", block: "start" });
+              }
+            } else {
+              // Navigate to other page
+              window.location.href = href;
+            }
+          } else {
+            alert("No matching navigation link found.");
+          }
+
+          document.querySelector(".search-popup").classList.remove("active");
+          document.body.classList.remove("search-active");
+        });
+    </script>
+  </body>
+
+  <!-- Mirrored from html.kodesolution.com/2025/hoteler-html/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Jun 2025 15:50:05 GMT -->
 </html>
