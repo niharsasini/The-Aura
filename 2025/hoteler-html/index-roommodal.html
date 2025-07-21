@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Room Booking Modal</title>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7fa;
+    }
+
+    .modal {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      z-index: 999;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+    }
+
+    .modal-content {
+      background-color: #fff;
+      border-radius: 14px;
+      padding: 2.5rem;
+      width: 100%;
+      max-width: 800px;
+      position: relative;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+      overflow-y: auto;
+    }
+
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 25px;
+      font-size: 28px;
+      color: #666;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #0d47a1;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    input, textarea, button {
+      font-size: 15px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 100%;
+    }
+
+    input:focus, textarea:focus {
+      outline: 2px solid #0d47a1;
+    }
+
+    .half {
+      flex: 1 1 48%;
+    }
+
+    .full {
+      flex: 1 1 100%;
+    }
+
+    label {
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    .meals {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .meals label {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: 400;
+    }
+
+    button[type="submit"] {
+      background-color: #0d47a1;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #1565c0;
+    }
+
+    @media (max-width: 600px) {
+      .half {
+        flex: 1 1 100%;
+      }
+
+      .modal-content {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Modal always visible -->
+  <div id="roomModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="goBack()">&times;</span>
+     <h2>Room Enquiry For – <span id="hotelName">THE AURA HOTEL</span></h2>
+
+      <p class="selected-room">Selected Room: <strong id="selectedRoomName">Loading...</strong></p>
+      <p>Please fill in your details below — our team will contact you soon.</p>
+
+      <form id="enquiryForm">
+        <input class="half" type="text" name="fullName" placeholder="Full Name" required />
+        <input class="half" type="tel" name="contactNumber" placeholder="Primary Contact Number" required />
+        <input class="half" type="email" name="email" placeholder="Email Address" required />
+        <input class="half" type="tel" name="alternateContact" placeholder="Alternate Contact (Optional)" />
+        <input class="half" type="number" name="numberOfRooms" placeholder="No. of Rooms" min="1" required />
+        <input class="half" type="number" name="numberOfPersons" placeholder="No. of Persons" min="1" required />
+        <input class="half" type="date" name="date" id="dateField" required />
+
+        <div class="meals full">
+          <label><input type="checkbox" name="meals" value="Breakfast"/> Breakfast</label>
+          <label><input type="checkbox" name="meals" value="Lunch"/> Lunch</label>
+          <label><input type="checkbox" name="meals" value="Dinner"/> Dinner</label>
+        </div>
+
+        <textarea class="full" name="message" placeholder="Special requests?"></textarea>
+
+        <button type="submit" class="full">📩 Submit Enquiry</button>
+      </form>
+    </div>
+  </div>
+
+ <script>
+  emailjs.init("eB5zMi_N5hvYSPmtu"); // ✅ Replace with your EmailJS Public Key
+
+  // ✅ Extract room and hotel from URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const selectedRoom = urlParams.get("room") || "Not Specified";
+  const hotelParam = urlParams.get("hotel");
+
+  // ✅ Update hotel name dynamically
+  const hotelNameElement = document.getElementById("hotelName");
+  if (hotelParam === "puri") {
+    hotelNameElement.textContent = "THE AURA PURI";
+  } else if (hotelParam === "bbsr") {
+    hotelNameElement.textContent = "THE AURA BHUBANESWAR";
+  } else {
+    hotelNameElement.textContent = "THE AURA HOTEL"; // Default fallback
+  }
+
+  // ✅ Set selected room text
+  document.getElementById("selectedRoomName").textContent = selectedRoom;
+
+  // ✅ Pre-fill today's date
+  document.getElementById("dateField").value = new Date().toISOString().split("T")[0];
+
+  function goBack() {
+    history.back(); // 🡸 Go back to previous page
+  }
+
+  // ✅ Form submit handler
+  document.getElementById("enquiryForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = new FormData(form);
+    const meals = Array.from(form.querySelectorAll("input[name='meals']:checked")).map(el => el.value);
+
+    const fullName = formData.get("fullName");
+    const email = formData.get("email");
+
+    const htmlContent = `
+      <h2>Room Enquiry - ${fullName}</h2>
+      <p><strong>Hotel:</strong> ${hotelNameElement.textContent}</p>
+      <p><strong>Room:</strong> ${selectedRoom}</p>
+      <p><strong>Name:</strong> ${fullName}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Contact:</strong> ${formData.get("contactNumber")}</p>
+      <p><strong>Date:</strong> ${formData.get("date")}</p>
+      <p><strong>Rooms:</strong> ${formData.get("numberOfRooms")}</p>
+      <p><strong>Persons:</strong> ${formData.get("numberOfPersons")}</p>
+      <p><strong>Meal Plan:</strong> ${meals.join(", ") || "None"}</p>
+      <p><strong>Message:</strong> ${formData.get("message") || "N/A"}</p>
+    `;
+
+    const ownerParams = {
+      name: fullName,
+      email: email,
+      html_message: htmlContent,
+    };
+
+    const userParams = {
+      to_email: email,
+      name: fullName,
+      email: email,
+      form_title: selectedRoom,
+      summary: htmlContent,
+    };
+
+    emailjs.send("service_vki3w9f", "template_d7fzjcc", ownerParams)
+      .then(() => emailjs.send("service_psok1pn", "template_3el2etq", userParams))
+      .then(() => {
+        alert("✅ Thank you! Your enquiry was sent successfully.");
+        form.reset();
+        goBack();
+      })
+      .catch(err => {
+        console.error("EmailJS Error:", err);
+        alert("❌ Something went wrong. Please try again.");
+      });
+  });
+</script>
+
+</body>
+</html>
